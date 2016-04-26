@@ -251,7 +251,7 @@ its end:
 
     # tail -f /var/log/upstart/gunicorn.log
 
-With these error messages it will much easier to find the problem.
+With these error messages it will be much easier to find the problem.
 
 502 Bad Gateway
 ---------------
