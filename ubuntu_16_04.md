@@ -248,3 +248,16 @@ If it runs for the first time, you can drink a champagne :)
 502 Bad Gateway
 ---------------
 It means there is a problem between the communication of Nginx and Gunicorn.
+
+504 Gateway Time-out
+--------------------
+I ran into this error after a good while. My REST API was running too long
+(for several minutes), and Nginx raised a timeout error. To cure this
+problem, add the following lines to your nginx config file:
+
+    proxy_connect_timeout       600;
+    proxy_send_timeout          600;
+    proxy_read_timeout          600;
+    send_timeout                600;
+
+In our example the nginx config file is here: `/etc/nginx/sites-available/flask`.
