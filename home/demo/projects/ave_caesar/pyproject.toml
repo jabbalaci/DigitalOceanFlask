@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ave-caesar"
+version = "0.1.0"
+description = ""
+authors = ["Jabba Laci <jabba.laci@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ave_caesar"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^2.2.2"
+gunicorn = "^20.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
