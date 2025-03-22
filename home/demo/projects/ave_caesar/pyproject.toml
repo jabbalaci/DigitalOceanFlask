@@ -9,7 +9,7 @@ packages = [{include = "ave_caesar"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 Flask = "^2.3.2"
-gunicorn = "^22.0.0"
+gunicorn = "^23.0.0"
 
 
 [build-system]
