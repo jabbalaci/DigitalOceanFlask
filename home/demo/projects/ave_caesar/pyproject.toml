@@ -8,7 +8,7 @@ packages = [{include = "ave_caesar"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Flask = "^2.3.2"
+Flask = "^3.1.3"
 gunicorn = "^23.0.0"
 
 
